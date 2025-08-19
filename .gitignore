@@ -1,0 +1,13 @@
+# dbt generate files
+logs
+target
+dbt_packages
+dbt_modules
+
+# python virtual environment
+.venv
+__pycache__/
+
+# IDE files
+.idea
+.vscode
