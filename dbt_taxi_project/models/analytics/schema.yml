@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: mart_monthly_trip_summary
+    description: "Monthly aggregated summary of NYC taxi trips, separated by taxi color."
+    columns:
+      - name: trip_month
+        description: "The first day of the month for the aggregated data."
+        tests:
+          - not_null
+
+      - name: taxi_color
+        description: "The type of taxi (Yellow or Green)."
+        tests:
+          - not_null
+
+      - name: total_trips
+        description: "Total number of trips for the month and taxi color."
+        tests:
+          - not_null
