@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: nyc_taxi_data
+    database: TAXI_DATA_PROJECT
+    schema: RAW
+
+    tables:
+      - name: RAW_YELLOW_TRIPS
+      - name: GREEN_YELLOW_TRIPS
